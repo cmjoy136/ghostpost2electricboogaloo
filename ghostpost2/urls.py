@@ -17,12 +17,13 @@ from django.contrib import admin
 from django.urls import path
 from django.conf.urls import url, include
 
+
 from rest_framework import routers
 
 from ghostpost2.quickstart.views import PostView
 
 router = routers.DefaultRouter()
-router.register(r'post', PostView)
+router.register(r'posts', PostView)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
